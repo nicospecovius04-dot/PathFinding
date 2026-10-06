@@ -1,0 +1,52 @@
+Checks: '-*,readability-identifier-naming'
+
+CheckOptions:
+  # Funktionen → PascalCase
+  - key: readability-identifier-naming.FunctionCase
+    value: CamelCase
+
+  # Lokale Variablen → camelCase
+  - key: readability-identifier-naming.VariableCase
+    value: camelBack
+
+  # Private Member → name_
+  - key: readability-identifier-naming.PrivateMemberSuffix
+    value: _
+
+  - key: readability-identifier-naming.PrivateMemberCase
+    value: camelBack
+
+  # Protected Member → name_
+  - key: readability-identifier-naming.ProtectedMemberSuffix
+    value: _
+
+  - key: readability-identifier-naming.ProtectedMemberCase
+    value: camelBack
+
+  # Klassen → PascalCase
+  - key: readability-identifier-naming.ClassCase
+    value: CamelCase
+
+  # Structs → PascalCase
+  - key: readability-identifier-naming.StructCase
+    value: CamelCase
+
+  # Enum class → PascalCase
+  - key: readability-identifier-naming.EnumCase
+    value: CamelCase
+
+  # Enum-Werte → PascalCase
+  - key: readability-identifier-naming.EnumConstantCase
+    value: CamelCase
+
+  # Typ-Aliase → PascalCase
+  - key: readability-identifier-naming.TypeAliasCase
+    value: CamelCase
+
+  # Konstanten → UPPER_CASE
+  - key: readability-identifier-naming.ConstantCase
+    value: UPPER_CASE
+
+  # constexpr → UPPER_CASE
+  - key: readability-identifier-naming.ConstexprVariableCase
+    value: UPPER_CASE
